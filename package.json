@@ -1,6 +1,6 @@
 {
   "name": "glitch-info",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A simple package that returns info on your Glitch profile, teams and collections in JSON format.",
   "main": "server.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "node-fetch": "^2.6.0"
   },
   "engines": {
@@ -24,5 +23,8 @@
     "simple",
     "ui",
     "json"
-  ]
+  ],
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }

@@ -4,6 +4,8 @@ module.exports = {
   
   user: function (user) {
     
+    var userObj;
+    
     // check if user parameter is undefined or nothing
     if (user == undefined || user == "") {
       // give an error!
@@ -13,7 +15,9 @@ module.exports = {
     // fetch the glitch api for username
     fetch(`https://api.glitch.com/v1/users/by/login?login=${user}`)
     .then(res => res.json())
-    .then(json => console.log(json));
+    .then(json => {
+      return json;
+    });
     
   }
   
