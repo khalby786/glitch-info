@@ -1,13 +1,15 @@
 {
-  "name": "hello-express",
+  "name": "glitch-profiles",
   "version": "0.0.1",
-  "description": "A simple API that returns ",
+  "description": "A simple package that returns info on your Glitch profile, teams and collections in JSON format.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
   },
   "engines": {
     "node": "12.x"
