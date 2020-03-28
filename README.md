@@ -16,7 +16,9 @@ npm install glitch-info
 const glitch = require('glitch-info');
 
 // get users
-var me = glitch.user('khalby786');
-
-console.log(me); // returns 'khalby786' Object
+glitch.user("khalby786").then((user) => {
+  console.log(user);
+}).catch((err) => {
+  console.error(err);
+});
 ```
