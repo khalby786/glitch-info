@@ -1,6 +1,6 @@
 {
   "name": "glitch-info",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A simple package that returns info on your Glitch profile, teams and collections in JSON format.",
   "main": "server.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://github.com/edit/#!/hello-express"
+    "url": "https://github.com/khalby786/glitch-info"
   },
   "license": "MIT",
   "keywords": [
