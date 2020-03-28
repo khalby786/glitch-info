@@ -1,5 +1,5 @@
 {
-  "name": "glitch-profiles",
+  "name": "glitch-info",
   "version": "0.0.1",
   "description": "A simple package that returns info on your Glitch profile, teams and collections in JSON format.",
   "main": "server.js",
