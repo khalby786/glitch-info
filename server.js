@@ -47,25 +47,25 @@ module.exports = {
         reject("Invalid arguments for user name and collection!");
       } else {
         // convert args to lower case
-        let user = user.toLowerCase();
-        let collection = collection.toLowerCase();
+        let user_s = user.toLowerCase();
+        let collection_s = collection.toLowerCase();
         
         // loop through usernames and replace spaces with hyphens
         var i = 0;
-        var strLength = user.length;
+        var strLength = user_s.length;
         for(i; i < strLength; i++) {
-         user = user.replace(" ", "_");
+         user_s = user_s.replace(" ", "_");
         }
         
         // loop through collection names and replace them with hyphens
         var i = 0;
-        var strLength = collection.length;
+        var strLength = collection_s.length;
         for(i; i < strLength; i++) {
-         collection = collection.replace(" ", "_");
+         collection_s = collection_s.replace(" ", "_");
         }
         
         // fetch from API
-        fetch(`https://api.glitch.com/v1/collections/by/fullUrl?fullUrl=${user}%2F${collection}`)
+        fetch(`https://api.glitch.com/v1/collections/by/fullUrl?fullUrl=${user_s}%2F${collection_s}`)
           .then(res => res.json())
           .then(resolve)
           .catch(reject);
